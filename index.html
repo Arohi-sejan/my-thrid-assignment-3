@@ -14,9 +14,9 @@
     theme: {
       extend: {
         colors: {
-          primary: "#FFDC26",
-          cardcolor: "#F9DF8A",
-          Secondary: "#FFF9F4"
+            card: "#F9DF8A",
+          Secondary:"#FFDC26",
+          primary:"#FFF9F4"
 
         }
       }
@@ -70,18 +70,18 @@ rel="stylesheet">
 
 
 </head>
-<body>
+<body class="font-family-sora">
     <!-- header section -->
     
     <header>
         <!-- navbar -->
-        <nav class="font-family-sora bg-Secondary">
+        <nav class="font-family-sora bg-primary">
           <div class="navbar items-center mx-auto lg:px-0 px-1 mx-3 max-w-screen-xl  font-family-sora">
             <div class="navbar-start">
               <div class="h-8 w-8">
                 <img src="images/logo-header.png" alt="logo-header">
               </div>
-              <a class="hidden font-bold ml-3 lg:flex text-3xl ">Browse<span class="text-primary">4</span>Pets</a>
+              <a class="hidden font-bold ml-3 lg:flex text-3xl ">Browse<span class="text-Secondary">4</span>Pets</a>
             </div>
             <div class="navbar-center lg:flex hidden  gap-8">
               <ul class="menu px-1 menu-horizontal gap-5 font-semibold ">
@@ -92,19 +92,14 @@ rel="stylesheet">
             </div>
     
             <div class="navbar-end gap-4">
-              <div class="hidden lg:flex">
-                
-              </div>
-              <div class="hidden lg:flex">
-                
-              </div>
-              <i class="fa-thin fa-bell"></i>
-              <i class="fa-thin fa-magnifying-glass"></i>
+             
+              <img src="images/bell (1) 1.png" alt="bell img">
+              <img src="images/Search.png" alt="Search img">
               <button
-                class="hidden border-primary hover:bg-primary hover:border-primary lg:flex btn btn-outline hover:text-black">Login</button>
+                class="hidden border-Secondary hover:bg-Secondary hover:border-Secondary lg:flex btn btn-outline hover:text-black">Login</button>
     
               <button
-                class="hidden border-primary bg-primary hover:border-primary hover:bg-white lg:flex btn btn-outline  hover:text-black">Register</button>
+                class="hidden border-Secondary bg-Secondary hover:border-Secondary hover:bg-white lg:flex btn btn-outline  hover:text-black">Register</button>
             </div>
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-1">
@@ -129,7 +124,7 @@ rel="stylesheet">
               handpicked
               for<br> your furry friends. Shop now and make tails wag with joy!</p>
             <button
-              class=" border-primary hover:shadow-2xl  hover:border-primary bg-primary hover:bg-gray-100 hover:text-black lg:flex btn btn-outline ">Find
+              class=" border-Secondary hover:shadow-2xl  hover:border-Secondary bg-Secondary hover:bg-gray-100 hover:text-black lg:flex btn btn-outline ">Find
               a
               pet</button>
               <div class=" absolute w-full  lg:relative lg:-mt-96  -z-10 -mt-24 ">
@@ -150,7 +145,7 @@ rel="stylesheet">
           <div class="mb-36 grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4 lg:gap-6">
     
             <!-- C-1 -->
-            <div class="card bg-cardcolor h-[281px] shadow-xl  ">
+            <div class="card bg-card h-[281px] shadow-xl  ">
               <figure class="py-10 px-12 ">
                 <div class="avatar">
                   <div class="px-7 rounded-full py-7 w-28   bg-white">
@@ -166,7 +161,7 @@ rel="stylesheet">
               </div>
             </div>
             <!-- c-2 -->
-            <div class="card bg-cardcolor h-[280px]  shadow-xl">
+            <div class="card bg-card h-[280px]  shadow-xl">
               <figure class="px-12 py-10">
                 <div class="avatar">
                   <div class="px-7 py-7 rounded-full w-28   bg-white">
@@ -182,7 +177,7 @@ rel="stylesheet">
               </div>
             </div>
             <!-- c-3 -->
-            <div class="card bg-cardcolor  h-[281px] shadow-xl">
+            <div class="card bg-card  h-[281px] shadow-xl">
               <figure class="px-12 py-10">
                 <div class="avatar">
                   <div class="px-7 py-7 rounded-full w-28  bg bg-white">
@@ -198,7 +193,7 @@ rel="stylesheet">
               </div>
             </div>
             <!-- c-4 -->
-            <div class="card bg-cardcolor h-[281px]  shadow-xl">
+            <div class="card bg-card h-[281px]  shadow-xl">
               <figure class="px-12 py-10">
                 <div class="avatar">
                   <div class="px-7 py-7 rounded-full w-28  bg bg-white">
@@ -214,7 +209,7 @@ rel="stylesheet">
               </div>
             </div>
             <!-- c-5 -->
-            <div class="card bg-cardcolor h-[281px]  shadow-xl">
+            <div class="card bg-card h-[281px]  shadow-xl">
               <figure class="px-12 py-10">
                 <div class="avatar">
                   <div class="px-7 py-7 rounded-full w-28  bg bg-white">
@@ -230,7 +225,7 @@ rel="stylesheet">
               </div>
             </div>
             <!-- c-6 -->
-            <div class="card bg-cardcolor h-[281px] shadow-xl">
+            <div class="card bg-card h-[281px] shadow-xl">
               <figure class="px-12 py-10">
                 <div class="avatar">
                   <div class="px-7 py-7 w-28 rounded-full bg bg-white">
@@ -249,18 +244,18 @@ rel="stylesheet">
         </section>
     
     <!--tren sec-->
-    <section class=" lg:px-32 lg:py-36 lg:bg-Secondary  lg:px-0 px-1.5 font-family-sora">
+    <section class=" lg:px-32 lg:py-36 lg:bg-primary  lg:px-0 px-1.5 font-family-sora">
     
         <div class="mb-12 max-w-screen-xl mx-auto">
           <h4 class="lg:text-4xl text-2xl font-family-sora ">Trending Pet Products</h4>
         </div>
         <div class="flex justify-center lg:flex-row flex-col max-w-screen-xl mx-auto">
           <!-- B-1 -->
-          <div class="relative lg:w-4/12 bg-cardcolor rounded-lg text-left space-y-5 pt-14 pb-48 lg:px-8 px-3">
+          <div class="relative lg:w-4/12 bg-card rounded-lg text-left space-y-5 pt-14 pb-48 lg:px-8 px-3">
             <h4 class="text-3xl font-family-sora">T- Shirt For Dogs</h4>
             <p class="font-family-sora">Discover a world of treats, toys, and <br>essentials handpicked for </p>
             <button
-              class=" border-white bg-white hover:bg-white hover:border-primary btn btn-outline hover:text-black font-family-sora text-xl">Shop
+              class=" border-white bg-white hover:bg-white hover:border-Secondary btn btn-outline hover:text-black font-family-sora text-xl">Shop
               Now</button>
             <img class="absolute bottom-0 lg:w-72 right-0.5 " src="images/cute-pet-small.png" alt="">
           </div>
@@ -269,8 +264,8 @@ rel="stylesheet">
   
             <!-- s-1 -->
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto ">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/dog-cartoon.png" alt="dog-cartoon">
                   </div>
@@ -290,8 +285,8 @@ rel="stylesheet">
             <!-- s-2 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/rabbit-cartoon.png" alt="rabbit-cartoon">
                   </div>
@@ -311,8 +306,8 @@ rel="stylesheet">
             <!-- s-3 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/fish-cartoon.png" alt="fish-cartoon">
                   </div>
@@ -332,8 +327,8 @@ rel="stylesheet">
             <!-- s-4 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/fish-cartoon.png" alt="fish-cartoon">
                   </div>
@@ -353,8 +348,8 @@ rel="stylesheet">
             <!-- s-5 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/bird-cartoon.png" alt="bird-cartoon">
                   </div>
@@ -374,8 +369,8 @@ rel="stylesheet">
             <!-- s-6 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/pet-couch.png" alt="pet-couch">
                   </div>
@@ -395,8 +390,8 @@ rel="stylesheet">
             <!-- s-7 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/bird-cartoon.png" alt="bird-cartoon">
                   </div>
@@ -416,8 +411,8 @@ rel="stylesheet">
             <!-- s-8 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/pet-couch.png" alt="pet-couch">
                   </div>
@@ -437,8 +432,8 @@ rel="stylesheet">
             <!-- s-9 -->
   
             <div class="bg-white border-2 flex  items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/rabbit-cartoon.png" alt="rabbit-cartoon">
                   </div>
@@ -458,8 +453,8 @@ rel="stylesheet">
             <!-- s-10 -->
             <div
               class="bg-white border-2 flex md:hidden lg:hidden items-center rounded-xl lg:px-4 lg:py-4 lg:min-w-64 px-2 py-2 w-auto ">
-              <div class=" bg-Secondary">
-                <div class="bg-Secondary px-5 py-5 rounded-lx">
+              <div class=" bg-primary">
+                <div class="bg-primary px-5 py-5 rounded-lx">
                   <div class="lg:w-14 lg:h-14 w-7 h-7">
                     <img src="images/dog-cartoon.png" alt="dog-cartoon">
                   </div>
@@ -486,11 +481,11 @@ rel="stylesheet">
   
         <h3 class="lg:text-4xl text-3xl font-adlam mb-12">Everyday low Price</h3>
         <div class="flex lg:flex-row flex-col justify-between gap-5">
-          <!-- B-1 -->
+          <!-- frist-1 -->
           <div
             class="relative flex justify-between lg:w-8/12 border rounded-xl bg-gradient-to-br from-[#f9cffc] to-[#cadff7] w-full lg:h-auto h-96 ">
             <div class="lg:ml-20 lg:py-32 py-7 lg:ml-12 ml-3 text-left lg:space-y-3 ">
-              <p class="font-sora lg:opacity-100 opacity-0">Under Price</p>
+              <p class="font-family-sora font-bold lg:opacity-100 opacity-0">Under Price</p>
               <h4 class="font-adlam text-3xl">Pet Grooming Mitt</h4>
               <p class="font-adlam text-2xl lg:opacity-100 opacity-0 text-white">(Easy Hair Removal)</p>
               <p class="font-adlam text-5xl lg:text-black text-white ">$7.99</p>
@@ -500,26 +495,26 @@ rel="stylesheet">
               <img src="images/cute-dog-mid.png" alt="cute-dog-mid">
             </div>
           </div>
-          <!-- B-2 -->
-          <div class="relative bg-gradient-to-br from-[#fdf9f6] to-[#f0d787] lg:w-5/12 w-full lg:h-auto h-96 mx-auto bg-cardcolor rounded-xl text-left space-y-2
+          <!-- secound-2 -->
+          <div class="relative bg-gradient-to-br from-[#fdf9f6] to-[#f0d787] lg:w-5/12 w-full lg:h-auto h-96 mx-auto bg-card rounded-xl text-left space-y-2
                    pt-12 lg:px-12 px-3">
             <h4 class=" text-3xl font-adlam">T-Shirt for Dogs</h4>
-            <p class="font-adlam text-6xl text-primary">$7.99</p>
+            <p class="font-adlam text-6xl text-Secondary">$7.99</p>
             <img class="absolute bottom-0 lg:w-72 w-52 right-0.5 " src="images/cute-pet-mid.png" alt="cute-pet-mid">
           </div>
         </div>
       </section>
       
         <!-- my section one -->
-      <section>
-        <div class="bg-Secondary justify-center items-center">
-            <h1 class="lg:text-5xl text-2xl  font-bold pl-3.5 ">pets galary</h1>
+      <section  >
+        <div class="bg-primary justify-center items-center">
+            <h1 class=" animated-text lg:text-5xl text-2xl mt-10  font-bold pl-3.5 ">pets galary</h1>
           
               
                 <marquee behavior="" direction="">
       
                   
-                  <div class="grid grid-cols-3 gap-5 ">
+                  <div class="grid grid-cols-3 mt-10 gap-5 ">
       
                   <div class="hero lg:min-h-[200px]"
                   style="background-image: url(assets/frist\ \(3\).jpg);">
@@ -528,7 +523,7 @@ rel="stylesheet">
                     <div class="max-w-md">
                       <h1 class="mb-5 lg:text-5xl font-bold">Hello pet</h1>
                       
-                      <button class="btn bg-Secondary opacity-60 border-Secondary text-gray-700 btn-primary">Get Started</button>
+                      <button class="btn bg-primary opacity-60 border-primary text-gray-700 btn-primary">Get Started</button>
                     </div>
                   </div>
                 </div>
@@ -540,7 +535,7 @@ rel="stylesheet">
                   <div class="max-w-md">
                     <h1 class="mb-5 lg:text-5xl font-bold">Hello pet</h1>
                     
-                    <button class="btn bg-Secondary opacity-60 border-Secondary text-gray-700 btn-primary">Get next</button>
+                    <button class="btn bg-primary opacity-60 border-primary text-gray-700 btn-primary">Get next</button>
                   </div>
                 </div>
               </div>
@@ -553,7 +548,7 @@ rel="stylesheet">
                     <div class="max-w-md">
                       <h1 class="mb-5 lg:text-5xl font-bold">Hello pet</h1>
                      
-                      <button class="btn bg-Secondary opacity-60 border-Secondary text-gray-700 btn-primary">Get close</button>
+                      <button class="btn bg-primary opacity-60 border-primary text-gray-700 btn-primary">Get close</button>
                     </div>
                   </div>
                 </div>
@@ -566,69 +561,123 @@ rel="stylesheet">
 
 <!-- my section two -->
 
-<div>
-    <div>
-       <div class="flex lg:flex-row flex-col mt-5 items-center">
-           <div class="card bg-base-100 w-96 mt-5 shadow-xl">
-               <figure>
-                 <img
-                   src="assets/card.jpg"
-                   alt="cat" />
-               </figure>
-               <div class="card-body">
-                 <h2 class="card-title">
-                   CUT PET
-                   <div class="badge badge-secondary">NEW</div>
-                 </h2>
-                 <p>animal kept by human beings as a source of companionship and pleasure.</p>
-                 <div class="card-actions justify-end">
-                  
-                   <div class="badge bg-primary badge-outline">cut cat</div>
-                 </div>
-               </div>
-             </div>
-
-             <div class="card bg-base-100 mt-5 w-96 shadow-xl">
-               <figure>
-                 <img
-                   src="assets/card2.jpg"
-                   alt="cat" />
-               </figure>
-               <div class="card-body">
-                 <h2 class="card-title">
-                   CUT PET
-                   <div class="badge badge-secondary">NEW</div>
-                 </h2>
-                 <p>animal kept by human beings as a source of companionship and pleasure.</p>
-                 <div class="card-actions justify-end">
-                  
-                   <div class="badge bg-primary badge-outline">cut cat</div>
-                 </div>
-               </div>
-             </div>
-
-             <div class="card bg-base-100 mt-5 w-96 shadow-xl">
-               <figure>
-                 <img
-                   src="assets/card3.webp"
-                   alt="cat" />
-               </figure>
-               <div class="card-body">
-                 <h2 class="card-title">
-                   CUT PET
-                   <div class="badge badge-secondary">NEW</div>
-                 </h2>
-                 <p>animal kept by human beings as a source of companionship and pleasure.</p>
-                 <div class="card-actions justify-end">
-                   
-                   <div class="badge badge-outline bg-primary">cut cat</div>
-                 </div>
-               </div>
-             </div>
-       </div>
+<div class="mx-4 mt-32 mb-32 max-w-screen-xl mx-auto bg-primary lg:px-0 px-1.5 font-family-sora  grid grid-cols-1 lg:grid-cols-3 mt-5 items-center "  >
+       <!-- c1 -->
+    <div class="card bg-base-100 w-96 mt-5 shadow-xl">
+        <figure>
+          <img
+            src="assets/card.jpg"
+            alt="cat" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            CUT PET
+            <div class="badge badge-primary">NEW</div>
+          </h2>
+          <p>animal kept by human beings as a source of companionship and pleasure.</p>
+          <div class="card-actions justify-end">
+           
+            <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+          </div>
+        </div>
+      </div>
+<!-- c2 -->
+      <div class="card bg-base-100 mt-5 w-96 shadow-xl">
+        <figure>
+          <img
+            src="assets/card2.jpg"
+            alt="cat" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            CUT PET
+            <div class="badge badge-primary">NEW</div>
+          </h2>
+          <p>animal kept by human beings as a source of companionship and pleasure.</p>
+          <div class="card-actions justify-end">
+           
+            <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+          </div>
+        </div>
+      </div>
+<!-- c3 -->
+<div class="card bg-base-100 mt-5 w-96 shadow-xl">
+    <figure>
+      <img
+        src="assets/card2.jpg"
+        alt="cat" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        CUT PET
+        <div class="badge badge-primary">NEW</div>
+      </h2>
+      <p>animal kept by human beings as a source of companionship and pleasure.</p>
+      <div class="card-actions justify-end">
+       
+        <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+      </div>
     </div>
-</div>
-
+  </div>
+<!-- c4 -->
+      <div class="card bg-base-100 w-96 mt-5 shadow-xl">
+         <figure>
+           <img
+             src="assets/card.jpg"
+             alt="cat" />
+         </figure>
+         <div class="card-body">
+           <h2 class="card-title">
+             CUT PET
+             <div class="badge badge-primary">NEW</div>
+           </h2>
+           <p>animal kept by human beings as a source of companionship and pleasure.</p>
+           <div class="card-actions justify-end">
+            
+             <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+           </div>
+         </div>
+       </div>
+<!-- c5 -->
+       <div class="card bg-base-100 mt-5 w-96 shadow-xl">
+         <figure>
+           <img
+             src="assets/card2.jpg"
+             alt="cat" />
+         </figure>
+         <div class="card-body">
+           <h2 class="card-title">
+             CUT PET
+             <div class="badge badge-primary">NEW</div>
+           </h2>
+           <p>animal kept by human beings as a source of companionship and pleasure.</p>
+           <div class="card-actions justify-end">
+            
+             <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+           </div>
+         </div>
+       </div>
+<!-- c6 -->
+<div class="card bg-base-100 mt-5 w-96 shadow-xl">
+    <figure>
+      <img
+        src="assets/card2.jpg"
+        alt="cat" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        CUT PET
+        <div class="badge badge-primary">NEW</div>
+      </h2>
+      <p>animal kept by human beings as a source of companionship and pleasure.</p>
+      <div class="card-actions justify-end">
+       
+        <div class="badge bg-Secondary  border-Secondary px-3 py-1 rounded-lg text-white  badge-outline">cut cat</div>
+      </div>
+    </div>
+  </div>
+       
+    </div >
       </section>
     </main>
   
@@ -636,23 +685,23 @@ rel="stylesheet">
         <!-- footer frist section  -->
         <section class="mx-4 mt-32  max-w-screen-xl mx-auto lg:px-0 px-1.5 font-family-sora">
           <div>
-            <div class=" hero bg-Secondary rounded-2xl flex justify-center">
+            <div class=" hero bg-primary rounded-2xl flex justify-center">
               <div class="hero-content flex-col lg:flex-row">
                 <div class="max-w-xl rounded-lg py-9 lg:px-20 px-8">
                   <img src="images/cute-pet-mid.png" />
                 </div>
                 <div class="lg:px-10 text-center lg:text-left ">
                   <h1 class="lg:text-4xl text-2xl font-adlam mb-5">Get Pawsome News!</h1>
-                  <p class="mb-10">
+                  <p class="mb-11 font-bold text-gray-400 ">
                     Exclusive training tips, ticks, product deals and more.
                   </p>
                   <div>
-                    <div class="form-control">
+                    <div class="form-control ">
                       <input type="email" class="input" placeholder="Enter email.........." required />
                     </div>
                     <br>
                     <button
-                      class=" mt-6 border-primary bg-primary hover:border-primary hover:bg-slate-100 lg:flex btn btn-outline hover:text-black">Subscribe</button>
+                      class=" mt-6 border-Secondary bg-Secondary hover:border-Secondary hover:bg-slate-100 lg:flex btn btn-outline hover:text-black">Subscribe</button>
                   </div>
                 </div>
               </div>
@@ -660,24 +709,24 @@ rel="stylesheet">
         </section>
         <!-- footer last section -->
         <section
-          class="footer -mt-60  -z-10 bg-cardcolor relative text-base-content lg:px-72 px-3 h-[654px]  lg:pt-44 lg:py-36 pt-72">
+          class="footer -mt-60  -z-10 bg-card relative text-base-content lg:px-72 px-3 h-[654px]  lg:pt-44 lg:py-36 pt-72">
           <nav class="lg:mt-80 ">
             <div class="flex mb-6 items-center ">
               <div>
                 <img src="images/logo-footer.png" alt="">
               </div>
-              <h6 class="footer-title ml-4  text-xl text-black lg:text-2xl">Browse<span class="text-primary">4</span>Pets
+              <h6 class="footer-title ml-4  text-xl text-black lg:text-2xl">Browse<span class="text-Secondary">4</span>Pets
               </h6>
             </div>
-            <p class="text-black">Discover a world of treats, toys, and <br>essentials handpicked for your furry friends</p>
+            <p class="text-black font-bold">Discover a world of treats, toys, and <br>essentials handpicked for your furry friends</p>
           </nav>
           <nav class="lg:mt-96">
-            <a class="link  text-black link-hover  ">Find a pet</a>
-            <a class="link  text-black link-hover">Breeds</a>
-            <a class="link  text-black link-hover">Contact us</a>
+            <a class="link  text-black link-hover font-bold  ">Find a pet</a>
+            <a class="link  text-black link-hover font-bold">Breeds</a>
+            <a class="link  text-black link-hover font-bold">Contact us</a>
           </nav>
           <nav class="lg:mt-96  lg:flex lg:-mr-96 lg:flex-col mb-24">
-            <h6 class="footer-title text-black">Follow Us</h6>
+            <h6 class="footer-title text-black font-bold">Follow Us</h6>
             <div class="grid grid-flow-col gap-4">
               <div class="flex space-x-8">
                 <div>
